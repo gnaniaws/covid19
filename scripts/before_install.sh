@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ec2-user/server
+cd /home/ubuntu/server
 sudo apt install software-properties-common ca-certificates lsb-release apt-transport-https
 curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
 sudo apt update
