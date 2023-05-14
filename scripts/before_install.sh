@@ -1,4 +1,8 @@
 #!/bin/bash
 cd /home/ec2-user/server
-curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -
-yum -y install nodejs npm
+sudo apt install software-properties-common ca-certificates lsb-release apt-transport-https
+curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt update
+sudo apt install -y nodejs
+sudo dpkg -i --force-overwrite /var/cache/apt/archives/nodejs_16.20.0-deb-1nodesource1_amd64.deb
+node  -v
